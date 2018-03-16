@@ -72,6 +72,8 @@ regress_and_validate(y, y_lagged)
 
 import pylab as pl
 
+# from: http://www.mirzatrokic.ca/FILES/codes/fracdiff.py
+# small modification: wrapped 2**np.ceil(...) around int()
 def fracdiff(x,d):
     T=len(x)
     np2=int(2**np.ceil(np.log2(2*T-1)))
